@@ -23,12 +23,12 @@
             <td>@item.Title</td>
             <td>@item.Subitle</td>
             <td>@item.Date</td>
-            <td><a href="#" class="btn btn-danger">Sil</a></td>
-            <td><a href="#" class="btn btn-warning"  >Güncelle</a></td>
+            <td><a href="/Experience/ExperienceDelete/@item.ExperienceID" class="btn btn-danger">Sil</a></td>
+            <td><a href="/Experience/ExperienceUpdate/@item.ExperienceID" class="btn btn-warning"  >Güncelle</a></td>
         </tr>
     }
 
 
 </table>
-<a href="#" class="btn btn-primary">Deneyimleri Ekle</a>
-@*Bu bir yorum*@ 
+<a href="/Experience/ExperienceAdd" class="btn btn-primary">Deneyimleri Ekle</a>
+
