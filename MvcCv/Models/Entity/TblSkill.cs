@@ -16,5 +16,6 @@ namespace MvcCv.Models.Entity
     {
         public int SkillID { get; set; }
         public string SkillName { get; set; }
+        public Nullable<byte> SkillValue { get; set; }
     }
 }

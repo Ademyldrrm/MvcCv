@@ -67,6 +67,7 @@
     <EntitySetMapping Name="TblSkill">
       <EntityTypeMapping TypeName="DbCvModel.TblSkill">
         <MappingFragment StoreEntitySet="TblSkill">
+          <ScalarProperty Name="SkillValue" ColumnName="SkillValue" />
           <ScalarProperty Name="SkillName" ColumnName="SkillName" />
           <ScalarProperty Name="SkillID" ColumnName="SkillID" />
         </MappingFragment>

@@ -132,8 +132,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\EdicationController.cs" />
     <Compile Include="Controllers\ExperienceController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SkillController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -2463,6 +2465,12 @@
     <Content Include="Views\Experience\Index.cshtml" />
     <Content Include="Views\Experience\ExperienceAdd.cshtml" />
     <Content Include="Views\Experience\ExperienceUpdate.cshtml" />
+    <Content Include="Views\Skill\Index.cshtml" />
+    <Content Include="Views\Skill\SkilAdd.cshtml" />
+    <Content Include="Views\Skill\SkillUpdate.cshtml" />
+    <Content Include="Views\Edication\Index.cshtml" />
+    <Content Include="Views\Edication\EdicationAdd.cshtml" />
+    <Content Include="Views\Edication\EdicationUpdate.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
