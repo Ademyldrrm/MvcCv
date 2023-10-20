@@ -27,6 +27,7 @@
     <EntitySetMapping Name="TblAward">
       <EntityTypeMapping TypeName="DbCvModel.TblAward">
         <MappingFragment StoreEntitySet="TblAward">
+          <ScalarProperty Name="Date" ColumnName="Date" />
           <ScalarProperty Name="AwardID" ColumnName="AwardID" />
           <ScalarProperty Name="explanation" ColumnName="explanation" />
         </MappingFragment>
@@ -82,6 +83,17 @@
           <ScalarProperty Name="Mail" ColumnName="Mail" />
           <ScalarProperty Name="NameSurname" ColumnName="NameSurname" />
           <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TblSosyal">
+      <EntityTypeMapping TypeName="DbCvModel.TblSosyal">
+        <MappingFragment StoreEntitySet="TblSosyal">
+          <ScalarProperty Name="SosyalValue" ColumnName="SosyalValue" />
+          <ScalarProperty Name="Sosyalİcon" ColumnName="Sosyalİcon" />
+          <ScalarProperty Name="SoyalLink" ColumnName="SoyalLink" />
+          <ScalarProperty Name="SoyalName" ColumnName="SoyalName" />
+          <ScalarProperty Name="SosyalID" ColumnName="SosyalID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

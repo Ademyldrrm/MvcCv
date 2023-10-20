@@ -16,5 +16,6 @@ namespace MvcCv.Models.Entity
     {
         public int AwardID { get; set; }
         public string explanation { get; set; }
+        public string Date { get; set; }
     }
 }

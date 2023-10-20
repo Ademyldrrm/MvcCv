@@ -8,6 +8,7 @@
     <form method="post">
         <h2 class="mb-5">Yetenek Güncelleme Sayfası</h2>
 
+        @Html.HiddenFor(x=>x.SkillID)
         <label>Yetebek İsmi</label>
         @Html.TextBoxFor(x => x.SkillName, new { @class = "form-control" })
         <br />

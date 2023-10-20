@@ -21,13 +21,20 @@ namespace MvcCv.Controllers
         }
         public ActionResult PartialNavbar()
         {
-            return PartialView();
+            var values = db.TblAbout.ToList();
+            return PartialView(values);
         }
         public ActionResult PartialAbout()
         {
             var values = db.TblAbout.ToList();
             return PartialView(values);
         }
+        public ActionResult PartialSosyal()
+        {
+            var values = db.TblSosyal.Where(x => x.SosyalValue == true).ToList(); ;
+            return PartialView(values);
+        }
+
         public ActionResult PartialExperience()
         {
             var values = db.TblExperience.ToList();

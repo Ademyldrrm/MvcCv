@@ -27,6 +27,7 @@
     </Key>
     <Property Name="AwardID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="explanation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Date" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="TblEdication">
     <Key>
@@ -66,6 +67,7 @@
     <EntitySet Name="TblInterest" EntityType="Self.TblInterest" />
     <EntitySet Name="TblSkill" EntityType="DbCvModel.TblSkill" />
     <EntitySet Name="TblContact" EntityType="DbCvModel.TblContact" />
+    <EntitySet Name="TblSosyal" EntityType="DbCvModel.TblSosyal" />
   </EntityContainer>
   <EntityType Name="TblSkill">
     <Key>
@@ -85,5 +87,15 @@
     <Property Name="Subject" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="Message" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="Date" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="TblSosyal">
+    <Key>
+      <PropertyRef Name="SosyalID" />
+    </Key>
+    <Property Name="SosyalID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SoyalName" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="SoyalLink" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Sosyalİcon" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="SosyalValue" Type="Boolean" />
   </EntityType>
 </Schema>

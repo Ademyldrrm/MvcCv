@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MvcCv.Models.Entity;
+using MvcCv.Repositories;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,10 +10,25 @@ namespace MvcCv.Controllers
 {
     public class AboutController : Controller
     {
-        // GET: About
+        GenericRepository<TblAbout> repo = new GenericRepository<TblAbout>();
+        [HttpGet]
         public ActionResult Index()
         {
-            return View();
+            var values = repo.List();
+            return View(values);
+        }
+        [HttpPost]
+        public ActionResult Index(TblAbout tblAbout)
+        {
+            var values = repo.Fınd(x => x.AboutID == 1);
+            values.Name = tblAbout.Name;
+            values.SurName = tblAbout.SurName;
+            values.Mail = tblAbout.Mail;
+            values.Phone = tblAbout.Phone;
+            values.ImageUrl = tblAbout.ImageUrl;
+            values.Adress = tblAbout.Adress;
+            repo.TUpdate(values);
+            return RedirectToAction("Index");
         }
     }
 }
